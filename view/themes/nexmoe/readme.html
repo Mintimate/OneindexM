@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+	<title>根目录 - OneIndex</title>
+	<link rel="icon" type="image/png" href="https://mintimate.cn/img/favicon.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://mintimate.cn/img/favicon.png">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+			<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+				<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+	<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
+	<style>
+		body{background-color:#f2f5fa;padding-bottom:60px;background-position:center bottom;background-repeat:no-repeat;background-attachment:fixed}.nexmoe-item{margin:20px -8px 0!important;padding:15px!important;border-radius:5px;background-color:#fff;-webkit-box-shadow:0 .5em 3em rgba(161,177,204,.4);box-shadow:0 .5em 3em rgba(161,177,204,.4);background-color:#fff}.mdui-img-fluid,.mdui-video-fluid{border-radius:5px;border:1px solid #eee}.mdui-list{padding:0}.mdui-list-item{margin:0!important;border-radius:5px;padding:0 10px 0 5px!important;border:1px solid #eee;margin-bottom:10px!important}.mdui-list-item:last-child{margin-bottom:0!important}.mdui-list-item:first-child{border:none}.mdui-toolbar{width:auto;margin-top:60px!important}.mdui-appbar .mdui-toolbar{height:56px;font-size:16px}.mdui-toolbar>*{padding:0 6px;margin:0 2px;opacity:.5}.mdui-toolbar>.mdui-typo-headline{padding:0 16px 0 0}.mdui-toolbar>i{padding:0}.mdui-toolbar>a:hover,a.mdui-typo-headline,a.active{opacity:1}.mdui-container{max-width:980px}.mdui-list>.th{background-color:initial}.mdui-list-item>a{width:100%;line-height:48px}.mdui-toolbar>a{padding:0 16px;line-height:30px;border-radius:30px;border:1px solid #eee}.mdui-toolbar>a:last-child{opacity:1;background-color:#1e89f2;color:#ffff}@media screen and (max-width:980px){.mdui-list-item .mdui-text-right{display:none}.mdui-container{width:100%!important;margin:0}.mdui-toolbar>*{display:none}.mdui-toolbar>a:last-child,.mdui-toolbar>.mdui-typo-headline,.mdui-toolbar>i:first-child{display:block}}
+	</style>
+	<script src="https://cdn.jsdelivr.net/gh/xieqifei/StaticsResources/oneindexn/mdui/mdui.min.js"></script>	
+</head>
+<body class="mdui-theme-primary-blue-grey mdui-theme-accent-blue">
+
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand ml-lg-5 pl-lg-5" href="/">
+    <img src="https://cdn.jsdelivr.net/gh/Mintimate/OneIndex-theme-nexmoes@latest/nexmoes/picture/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    <span class="ml-2">OneIndex</span>
+  </a>
+  <a class="nav-link mr-lg-5 pr-lg-5" href="https://www.mintimate.cn/about">技术支持</a>
+</nav>
+	
+	<div class="mdui-container">
+	    <div class="mdui-container-fluid">
+	    <div class="mdui-toolbar nexmoe-item">
+			<a href="/">OneIndex</a>
+						<i class="mdui-icon material-icons mdui-icon-dark" style="margin:0;">chevron_right</i>
+			<a href="/?/">/</a>
+						<!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">refresh</i></a>-->
+		</div>
+		</div>
+    	
+ 
+
+
+<div class="mdui-container-fluid">
+<style>
+.thumb .th{
+	display: none;
+}
+.thumb .mdui-text-right{
+	display: none;
+}
+.thumb .mdui-list-item a ,.thumb .mdui-list-item {
+	width:217px;
+	height: 230px;
+	float: left;
+	margin: 10px 10px !important;
+}
+
+.thumb .mdui-col-xs-12,.thumb .mdui-col-sm-7{
+	width:100% !important;
+	height:230px;
+}
+
+.thumb .mdui-list-item .mdui-icon{
+	font-size:100px;
+	display: block;
+	margin-top: 40px;
+	color: #7ab5ef;
+}
+.thumb .mdui-list-item span{
+	float: left;
+	display: block;
+	text-align: center;
+	width:100%;
+	position: absolute;
+    top: 180px;
+}
+/*loading动画*/
+.simple-spinner {
+  height: 100%;
+  border: 8px solid rgba(150, 150, 150, 0.2);
+  border-radius: 50%;
+  border-top-color: rgb(150, 150, 150);
+  animation: rotate 1s 0s infinite ease-in-out alternate;
+}
+@keyframes rotate {
+  0%   { transform: rotate(0);      }
+  100% { transform: rotate(360deg); }
+}
+</style>
+<div class="nexmoe-item">
+	<div class="mdui-row">
+		<ul class="mdui-list">
+			<li class="mdui-list-item th" id="indexsort">
+			 
+			<div class="mdui-col-xs-12 mdui-col-sm-7">文件 <i class="mdui-icon material-icons icon-sort" data-sort="name" data-order="downward">expand_more</i></div>
+			<div class="mdui-col-sm-3 mdui-text-right">修改时间 <i class="mdui-icon material-icons icon-sort" data-sort="date" data-order="downward">expand_more</i></div>
+			<div class="mdui-col-sm-2 mdui-text-right">大小 <i class="mdui-icon material-icons icon-sort" data-sort="size" data-order="downward">expand_more</i></div>
+			</li>
+						
+			<li class="mdui-list-item mdui-ripple filter" id="pending" style="display:none;"><div class="simple-spinner" id="loading"></div>文件加载中~~~
+			</li>
+							
+			<li class="mdui-list-item mdui-ripple filter" data-sort 
+						data-sort-name="Mac"
+						data-sort-date="1599626781"
+						data-sort-size="8616521996" 
+						id="1DD95BD0077CA497!3204">
+				<div class="simple-spinner loading-gif" style="display: none;"></div>
+				 		
+				<a href="/?/Mac/">
+				<div class="mdui-col-xs-12 mdui-col-sm-7 mdui-text-truncate">
+					<i class="mdui-icon material-icons">folder_open</i>
+					<span>Mac</span>
+				</div>
+				<div class="mdui-col-sm-3 mdui-text-right">2020-09-09 12:46:21</div>
+				<div class="mdui-col-sm-2 mdui-text-right">8GB</div>
+				</a>
+			</li>
+				
+								
+			<li class="mdui-list-item mdui-ripple filter" data-sort 
+						data-sort-name="Videos"
+						data-sort-date="1599464478"
+						data-sort-size="59124736600" 
+						id="1DD95BD0077CA497!3173">
+				<div class="simple-spinner loading-gif" style="display: none;"></div>
+				 		
+				<a href="/?/Videos/">
+				<div class="mdui-col-xs-12 mdui-col-sm-7 mdui-text-truncate">
+					<i class="mdui-icon material-icons">folder_open</i>
+					<span>Videos</span>
+				</div>
+				<div class="mdui-col-sm-3 mdui-text-right">2020-09-07 15:41:18</div>
+				<div class="mdui-col-sm-2 mdui-text-right">55.1GB</div>
+				</a>
+			</li>
+				
+								
+			<li class="mdui-list-item mdui-ripple filter" data-sort 
+						data-sort-name="Wallpapers"
+						data-sort-date="1599362878"
+						data-sort-size="2564491" 
+						id="1DD95BD0077CA497!3174">
+				<div class="simple-spinner loading-gif" style="display: none;"></div>
+				 		
+				<a href="/?/Wallpapers/">
+				<div class="mdui-col-xs-12 mdui-col-sm-7 mdui-text-truncate">
+					<i class="mdui-icon material-icons">folder_open</i>
+					<span>Wallpapers</span>
+				</div>
+				<div class="mdui-col-sm-3 mdui-text-right">2020-09-06 11:27:58</div>
+				<div class="mdui-col-sm-2 mdui-text-right">2.4MB</div>
+				</a>
+			</li>
+				
+						</ul>
+	</div>
+</div>
+</div>
+
+<div class="mdui-fab-wrapper" id="myFab">
+    <button class="mdui-fab mdui-ripple mdui-color-theme-accent">
+      <i class="mdui-icon material-icons">add</i>
+      <i class="mdui-icon mdui-fab-opened material-icons">mode_edit</i>
+    </button>
+    <div class="mdui-fab-dial">
+      <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red" id="search" style="display: none;"><i class="mdui-icon material-icons">&#xe8b6;</i>
+      </button>
+      <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-orange" onclick="location.href='/?/admin'"><i class="mdui-icon material-icons">account_circle</i>
+      </button>
+      <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-blue" onclick="thumb()"><i class="mdui-icon material-icons" id="format_list">format_list_bulleted</i>
+      </button>
+    </div>
+</div>
+
+<div class="mdui-container">
+  <div class="mdui-dialog" id="onlineupload-dialog">
+    <div class="mdui-dialog-title">文件在线上传</div>
+    <div class="mdui-dialog-content">
+		<div>最大支持4M文件上传</div>
+		<form id="filesubmit" action="?/onlinefileupload" method="post" enctype="multipart/form-data" >
+			<input class="mdui-center" type="file" style="margin: 50px 0;" name="onlinefile" />
+			<input type="text" style="display: none;" name="uploadurl" value="/"/>
+		</form>
+		<div class="mdui-row-xs-3">
+			<div class="mdui-col"></div>
+				<div class="mdui-col">
+					<button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" onclick="submitForm()">上传</button>
+				</div>
+		</div>
+	</div>
+    <div class="mdui-dialog-actions">
+      <button class="mdui-btn mdui-ripple" mdui-dialog-cancel>取消</button>
+    </div>
+  </div>
+</div>
+
+<div class="mdui-container">
+  <div class="mdui-dialog" id="remoteupload-dialog">
+    <div class="mdui-dialog-title">文件远程上传</div>
+    <div class="mdui-dialog-content">
+		<div>仅支持Onedrive个人版，企业和学校版无法使用此功能</div>
+		<form id="remoteupload" action="?/upload_url" method="post" >
+			<div class="mdui-textfield mdui-textfield-floating-label mdui-col-xs-10 mdui-col-offset-xs-1">
+				<label class="mdui-textfield-label">远程URL</label>
+				<input class="mdui-textfield-input" type="url" name="file_url" id="fileurl" onblur="getRemoteUrl()"/>
+			</div>
+			<div class="mdui-textfield mdui-textfield-floating-label mdui-col-xs-10 mdui-col-offset-xs-1">
+				<label class="mdui-textfield-label">文件名称</label>
+				<input class="mdui-textfield-input" type="text" id="filename" name="file_name" />
+			</div>
+			
+			<input type="text" style="display: none;" name="path_url" value="/"/>
+		</form>
+		<div class="mdui-row-xs-3">
+			<div class="mdui-col"></div>
+				<div class="mdui-col">
+					<button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" onclick="submitRemoteFile()">提交</button>
+				</div>
+		</div>
+	</div>
+    <div class="mdui-dialog-actions">
+      <button class="mdui-btn mdui-ripple" mdui-dialog-cancel>取消</button>
+    </div>
+  </div>
+</div>
+
+<div class="mdui-container">
+ <div class="mdui-dialog" id="search_form">
+    <div class="mdui-dialog-content">
+		<form action="?/search" method="post">
+			<div class="mdui-textfield mdui-textfield-floating-label">
+				<label class="mdui-textfield-label">输入关键词</label>
+				<input class="mdui-textfield-input" type="text" style="margin: 20px 0;" name="keyword" />
+				<div class="mdui-row-xs-3">
+				<div class="mdui-col"></div>
+					<div class="mdui-col">
+						<button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">提交</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+  </div>
+</div>
+
+
+<div class="mdui-container">
+ <div class="mdui-dialog" id="share">
+    <div class="mdui-dialog-content">
+			<div class="mdui-textfield mdui-textfield-floating-label">
+				<label class="mdui-textfield-label">选中的项目链接</label>
+				<textarea class="mdui-textfield-input" style="margin: 20px 0;" rows="5" readonly id="sharelinks"></textarea>
+			</div>
+	</div>
+  </div>
+</div>
+
+<div class="mdui-container">
+	<div class="mdui-dialog" id="progress">
+		<div class="mdui-dialog-content">
+			<span>文件处理进程</span>
+			<div class="mdui-progress" >
+				<div class="mdui-progress-determinate" style="width: 0%;" id="progress_width"></div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+<!-- <script src="https://cdn.jsdelivr.net/gh/xieqifei/OneindexN@v1.31/statics/js/nexmoe.js"></script> -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/xieqifei/StaticsResources@v1.4/oneindexn/themes/nexmoe/js/nexmoe.js"></script>
+
+  	</div>
+  		<meting-js
+		server="netease"
+		type="playlist"
+		id="2485662712"
+		fixed="true">
+	</meting-js>
+	<!-- id改成自己的歌单号 -->
+	<script src="https://cdn.jsdelivr.net/gh/Mintimate/OneIndex-theme-nexmoes@latest/nexmoes/theme/personjs.js"></script>
+  	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
