@@ -6,7 +6,7 @@ OneindexN项目地址：https://github.com/xieqifei/OneindexN
 
 管理员密码：MintimateBlog
 
-![](https://i.loli.net/2020/07/16/VnzDaT2Q8Xr3ZuP.png)
+![](https://cdn.jsdelivr.net/gh/Mintimate/OneindexM/demo/demo.png)
 
 #### 关于部署到heroku等，php无硬盘操作权限的平台须知：
 
