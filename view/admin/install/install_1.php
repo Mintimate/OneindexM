@@ -4,13 +4,13 @@
 	
 <div class="mdui-container-fluid">
 	<div class="mdui-typo">
-	  <h1>程序安装 <small>应用ID和机密</small></h1>
+	  <h1>程序安装 <small>设置应用ID和机密</small></h1>
 	</div>
 
 	<div class="mdui-typo">
       <h4 class="doc-article-title">
 	    填入<code>client_id</code>和<code>client_secret</code>,
-      	<a href="<?php echo $app_url;?>" target="_blank" class="mdui-btn mdui-color-theme-accent mdui-ripple"><i class="mdui-icon material-icons">&#xe89e;</i> 获取应用ID和机密(分两个页面显示，请注意保存)</a>
+      	<span>根据你的Onedrive供应商选择：</span>
       </h4>
     </div>
 

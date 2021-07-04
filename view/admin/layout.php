@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="/statics/themes/nexmoe/IMG/OneIndexM.svg">
+    <link rel="icon" href="/statics/themes/nexmoe/IMG/OneIndexM.svg">
 	<meta http-equiv="Access-Control-Allow-Origin" content="*" />
 	<title>OneIndex 系统管理</title>
 	<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">

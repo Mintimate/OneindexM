@@ -2,10 +2,12 @@
 <html>
 <head>
 	<meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="76x76" href="/statics/themes/nexmoe/IMG/OneIndexM.svg">
+    <link rel="icon" href="/statics/themes/nexmoe/IMG/OneIndexM.svg">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
 	<title>OneIndex <?php e($title);?></title>
 	<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
-	<script src="https://cdn.jsdelivr.net/gh/xieqifei/StaticsResources/oneindexn/mdui/mdui.min.js"></script>
+    <script src="/statics/themes/nexmoe/js/mdui.min.js"></script>
 		<style>
 		.mdui-appbar .mdui-toolbar{
 			height:56px;

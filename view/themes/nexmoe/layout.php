@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
 	<title><?php e($title.' - '.config('site_name'));?></title>
-	<link rel="icon" type="image/png" href="https://mintimate.cn/img/favicon.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="https://mintimate.cn/img/favicon.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/statics/themes/nexmoe/IMG/OneIndexM.svg">
+    <link rel="icon" href="/statics/themes/nexmoe/IMG/OneIndexM.svg">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 			<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
 				<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>

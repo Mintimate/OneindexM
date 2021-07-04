@@ -53,6 +53,11 @@
 	        <td><i class="mdui-icon material-icons" style="color:#f44336;">&#xe5cd;</i></td>
 	        <?php endif;?>
 	      </tr>
+	      <tr>
+	        <td>Tips</td>
+	        <td rowspan=2>建议配合Mintimate's Blog文章和视频操作：<a href="https://www.mintimate.cn/2020/09/22/oneindex/" target="_blank">博客文章</a>、
+	        <a href="https://www.bilibili.com/video/BV1ph41197aa" target="_blank">视频教程</a></td>
+	      </tr>
 	    </tbody>
 	  </table>
 	</div>
