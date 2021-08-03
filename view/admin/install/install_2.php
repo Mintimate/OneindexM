@@ -1,7 +1,7 @@
 <?php view::layout('install/layout')?>
 
 <?php view::begin('content');?>
-	
+<?php ?>
 <div class="mdui-container-fluid">
 	<div class="mdui-typo">
 	  <h1>程序安装 <small>绑定微软账号</small></h1>
