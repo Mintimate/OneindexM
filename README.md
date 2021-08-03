@@ -1,52 +1,46 @@
 # 一：简介
 
-本项目是Oneindex、OneindexN的继承、自用版本,以及OneindexN主题的修改。
+本项目是基于：
 
-OneindexN项目地址：https://github.com/xieqifei/OneindexN
+- Oneindex
 
-管理员密码：MintimateBlog
+- OneindexN项目地址：https://github.com/xieqifei/OneindexN
+
+详细安装教程：[基于Onedrive和Server搭建下载站/网盘](https://www.mintimate.cn/2020/09/22/oneindex)
+教程视频：[8分钟利用OneDrive搭建不限速的OneIndex分享网盘](https://www.bilibili.com/video/BV1ph41197aa)
+打赏-爱发电：[Mintimate的电圈](https://www.afdian.net/@mintimate/plan)
 
 ![](https://cdn.jsdelivr.net/gh/Mintimate/OneindexM/demo/demo.png)
 
-#### 关于部署到heroku等，php无硬盘操作权限的平台须知：
-
-> 安装程序不可用，将无限循环。请自行在其他主机安装后将config下文件拷贝到仓库，然后部署。网站的后台也无法修改前台的功能，后台修改都需要在主机上修改后，将config文件拷贝到heroku。
->
-> 建议使用虚拟主机/vps安装此应用。免费的虚拟主机：https://www.000webhost.com
->
-> 一个不完整的000webhost使用教程：https://sci.ci/2020/06/22/oneindex-zi-jian-bu-xian-su-wang-pan/
->
-> 这个虚拟主机安装的网站，网站会有水印，无法去除。你可以在这个主机上进行安装，然后将网站目录下的config文件夹下载下来，放到你fork的github仓库，然后部署到heroku。从而避免在heroku上运行安装程序。然后删除仓库的配置文件，/config/token.php和/config/base.php。务必关闭heroku的自动部署功能。
-
-如果安装时无法切换世纪互联/国际版本，可以自行修改`/lib/onedrive.php`中的`api_url`和`oauth_url`参数。
-
-全局搜索为onedrive官方返回的结果，搜索结果并不准确。过滤功能仅对当前页有效，能较为精确地根据关键词过滤。
-
-> dev
-> dev分支是开发中版本。较master功能可能更完善，但稳定性不做保证。
+## 特别注意
+OneindexM的默认密码为：**MintimateBlog**
 
 ## 修改功能：
 
 ### 后台：
 
 - 选择安装世纪互联/国际版（如需修改版本，需要删除config文件夹里的文件后重新进入安装程序）
-- ~~开启/关闭游客在线上传、指定游客上传路径，管理员不受指定路径限制~~
-- ~~开启/关闭游客离线上传，需安装aria2+rclone，上传路径在rclone中设置~~
 - 指定文件夹/全部文件夹，关闭Readme.md、index.html、head.md渲染（如果开启游客离线上传，可以关闭此路径的渲染，避免游客上传会被渲染的文件。）
 
 ### 前台
 
 以下功能仅支持nexmoe主题
-
 - 搜索功能：全局搜索/当前页过滤
 - 文件操作：删除/新建/重命名/剪切/复制/分享等。仅管理员可用
 - 文件上传：4M以下的文件在线上传。url远程上传，仅onedrive个人版支持。aria2离线上传，需自行安装在vps上安装aria2并完成相关配置。
 - 外部视频播放器播放接口。需要安装对应播放器。
 - 管理员登陆后，查看加密文件夹无需密码。
 
+## 更新日志
+- 2021.08.03：修复Cookies循环问题、修复世纪互联版本部分情况不可用问题。
+- 2021.07.01: 修复因为Onedrive接口更换，而导致的无法部署。
+- 2021.06.25: 更换重写URL服务器。
+
 # 二：部署网站
 
-网站环境尽量使用nginx。后面会用nginx做反代，可以避免修改yaaw的rpc参数。
+网站环境尽量使用Nginx或Apache，配合PHP5.7+版本。
+
+以下是上游Readme.md内容。
 
 ## 功能：
 
