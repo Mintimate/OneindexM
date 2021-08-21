@@ -6,9 +6,15 @@
 
 - OneindexN项目地址：https://github.com/xieqifei/OneindexN
 
-详细安装教程：[基于Onedrive和Server搭建下载站/网盘](https://www.mintimate.cn/2020/09/22/oneindex)
-教程视频：[8分钟利用OneDrive搭建不限速的OneIndex分享网盘](https://www.bilibili.com/video/BV1ph41197aa)
-打赏-爱发电：[Mintimate的电圈](https://www.afdian.net/@mintimate/plan)
+详细安装教程：
+- [基于Onedrive和Server搭建下载站/网盘](https://www.mintimate.cn/2020/09/22/oneindex)
+
+教程视频：
+- [8分钟利用OneDrive搭建不限速的OneIndex分享网盘](https://www.bilibili.com/video/BV1ph41197aa)
+
+
+打赏
+- 爱发电：[Mintimate的电圈](https://www.afdian.net/@mintimate/plan)
 
 ![](https://cdn.jsdelivr.net/gh/Mintimate/OneindexM/demo/demo.png)
 
