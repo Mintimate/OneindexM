@@ -21,7 +21,7 @@
 
 <nav class="navbar navbar-light bg-light">
   <a class="navbar-brand ml-lg-5 pl-lg-5" href="/">
-    <img src="https://cdn.jsdelivr.net/gh/Mintimate/OneIndex-theme-nexmoes@latest/nexmoes/picture/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    <img src="/statics/themes/nexmoe/IMG/OneIndexM.svg" width="30" height="30" class="d-inline-block align-top" alt="">
     <span class="ml-2"><?php e(config('site_name'));?> </span><span style="font-size:75%"><?php e(config('site_name_S'));?></span>
   </a>
   <!-- 右侧按钮修改 -->
