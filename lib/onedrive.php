@@ -536,7 +536,7 @@
 			$totalpath=$resp_json['parentReference']['path'];
 			$count=strpos($totalpath,"/drive/root:");
 			$pathwithroot=substr_replace($totalpath,"",$count,strlen('/drive/root:'));
-			$count2 = strpos($pathwithroot,config('onedrive_path'));
+			$count2 = strpos($pathwithroot,chr(config('onedrive_path')));
 			$path = config('root_path').'/'.substr_replace($pathwithroot,"",$count2,strlen(config('onedrive_root'))).'/';
 			$path = str_replace("//",'/',$path).$resp_json['name'];
 			return $path;

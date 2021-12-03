@@ -1,4 +1,4 @@
-# 一：简介
+## 简介
 
 本项目是基于：
 
@@ -18,7 +18,7 @@
 
 ![](https://cdn.jsdelivr.net/gh/Mintimate/OneindexM/demo/demo.png)
 
-## 特别注意
+### 特别注意
 OneindexM的默认密码为：**MintimateBlog**
 
 ## 修改功能：
@@ -38,17 +38,23 @@ OneindexM的默认密码为：**MintimateBlog**
 - 管理员登陆后，查看加密文件夹无需密码。
 
 ## 更新日志
+- 2021.12.03：修复PHP7.x查询函数警告问题；修复文件过滤、查询出错问题；修复排序不可用问题；移除Jq、Bootstrap；调整部分UI
 - 2021.08.03：修复Cookies循环问题、修复世纪互联版本部分情况不可用问题。
-- 2021.07.01: 修复因为Onedrive接口更换，而导致的无法部署。
-- 2021.06.25: 更换重写URL服务器。
+- 2021.07.01：修复因为Onedrive接口更换，而导致的无法部署。
+- 2021.06.25：更换重写URL服务器。
 
-# 二：部署网站
+## 部署网站
 
 网站环境尽量使用Nginx或Apache，配合PHP5.7+版本。
 
-以下是上游Readme.md内容。
+建议参考文章：
+![基于Onedrive和Server搭建下载站/网盘](https://www.mintimate.cn/2020/09/22/oneindex)
 
-## 功能：
+<hr/>
+
+**以下是上游Readme.md内容**
+
+## 功能
 
 不占用服务器空间，不走服务器流量，  
 
@@ -60,9 +66,7 @@ OneindexM的默认密码为：**MintimateBlog**
 
 ## 安装运行
 
-### 源码安装运行：
-
-#### 需求：
+### 需求：
 
 1、PHP空间，PHP 5.6+ 需打开curl支持  
 2、OneDrive 账号 (个人、企业版或教育版/工作或学校帐户)  
@@ -157,7 +161,7 @@ php one.php upload:file demo.zip /test/d.zip
 php one.php upload:file up/ /test/
 ```
 
-# 三：使用Aria2
+## 使用Aria2
 
 Nginx添加反向代理
 
@@ -203,7 +207,7 @@ rpc-listen-port=6800
 >
 > 如果应用有bug，或者你有好的修改建议，可以通过邮箱联系我：im@xieqifei.com
 
-# 五：参考资料
+## 参考资料
 
 《[github YAAW项目](https://github.com/binux/yaaw)》
 
