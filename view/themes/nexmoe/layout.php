@@ -6,7 +6,7 @@
 		<title><?php e($title.' - '.config('site_name'));?></title>
 		<link rel="stylesheet" href="/statics/themes/nexmoe/css/forkGh.css" />
 		<!--Safari浏览器-->
-		<link rel="apple-touch-icon" sizes="64x64" href="/statics/themes/nexmoe/img/OneIndexM.svg">
+		<link rel="apple-touch-icon" sizes="64x64" href="/statics/themes/nexmoe/IMG/OneIndexM.svg">
 		<!--Chrome等浏览器-->
 		<link rel="icon" href="/statics/themes/nexmoe/img/OneIndexM.svg">
         <!-- 视频Flv加载插件 -->
@@ -16,8 +16,8 @@
         <script crossorigin="anonymous" integrity="sha384-gdGYZwHnfJM54evoZhpO0s6ZF5BQiybkiyW7VXr+h5UfruuRL/aORyw+5+HZoU6e" src="https://lib.baomitu.com/aplayer/1.10.1/APlayer.min.js"></script>
         <!-- 音乐加载插件 -->
         <!-- <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script> -->
-        <script src="/statics/themes/nexmoe/Meting.min.js"></script>
-        <link crossorigin="anonymous" integrity="sha384-aF/tfXdmgYOOFoO7TFEEeEtmOViz6SCbCdzdCNWIrfjlQgOMDA8BWnzE6g3Cm96v" href="https://lib.baomitu.com/mdui/0.4.3/css/mdui.mini.css" rel="stylesheet">
+        <script src="/statics/themes/nexmoe/js/Meting.min.js"></script>
+        <link crossorigin="anonymous" href="https://lib.baomitu.com/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
 		<style>
 			body {
 				background-color: #f2f5fa;
